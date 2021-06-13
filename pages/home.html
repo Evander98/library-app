@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="shortcut icon" href="../assets/images/book.png" type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Home</title>
+</head>
+<body>
+  <div class="navbar">
+    <div class="top-menu-wrapper">
+      <div class="top-menu-wrapper">
+        <p class="top-menu">All Categories</p>
+        <img src="../assets/images/Polygon.svg" alt="">
+      </div>
+      <div class="top-menu-wrapper">
+        <p class="top-menu">All Time</p>
+        <img src="../assets/images/Polygon.svg" alt="">
+      </div>
+    </div>
+    <div class="top-menu-wrapper">
+      <img src="../assets/images/magnifying-glass.svg" class="search-icon" alt="">
+      <input type="text" class="input-search" placeholder="Search book"/>
+    </div>
+    <div class="top-menu-wrapper" >
+      <img src="../assets/images/bookshelf.svg" class="top-right-icon" alt="">
+      <p class="app-title">Library</p>
+    </div>
+  </div>
+  <div class="carousel">
+    <div class="carousel-flickity js-flickity">
+      <!-- images from unsplash.com -->
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
+      </div>
+      <div class="carousel-cell">
+        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
+      </div>
+    </div>
+  </div>
+  <div class="book-list">
+    <p class="app-title ">Book list</p>
+    <div class="book-list-wrapper">
+      <div class="book-card" onclick="window.location.href='../pages/detail.html'">
+        <div class="card-image">
+          <img src="../assets/images/card-book-cover.svg" alt="">
+        </div>
+        <div class="card-content">
+          <p class="card-title">Dilan 1990</p>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex fugit id eum, repellat explicabo.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="card-image">
+          <img src="../assets/images/bodo-amat.svg" alt="">
+        </div>
+        <div class="card-content">
+          <p class="card-title">Dilan 1990</p>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex fugit id eum, repellat explicabo.</p>
+        </div>
+      </div>
+      <div class="book-card">
+        <div class="card-image">
+          <img src="../assets/images/react-native.svg" alt="">
+        </div>
+        <div class="card-content">
+          <p class="card-title">Dilan 1990</p>
+          <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex fugit id eum, repellat explicabo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="sidebar">
+    <!-- <img src="../assets/images/menu.svg" alt="" class="icon-menu" onclick="sidebarHandler()"> -->
+    <div class="hamburger" onclick="sidebarHandler()">
+      <span class="burger"></span>
+      <span class="burger"></span>
+      <span class="burger"></span>
+    </div>
+    <img src="../assets/images/My pic.jpg" id="profile-pic" alt="Profile Pic">
+    <p id="name"></p>
+    <div class="logout-btn" onclick="onLogout()">
+      <img src="../assets/images/logout.svg" alt="">
+      <p class="logout-text">Logout</p>
+    </div>
+    <div id="side-menu-box">
+      <a class="side-menu" href="#">Explore</a>
+      <a class="side-menu">History</a>
+      <a class="side-menu" id="add-book" onclick="modalHandler()">Add Book</a>
+    </div>
+  </div>
+  <div id="modal">
+    <div class="modal-box">
+      <img src="../assets/images/close (1).svg" alt="" class="modal-close" onclick="modalHandler()">
+      <p class="modal-title">Add Data</p>
+      <div class="modal-input-wrapper">
+        <label for="" class="modal-input-label">URL Image</label>
+        <input type="text" class="modal-input"/>
+      </div>
+      <div class="modal-input-wrapper">
+        <label for="" class="modal-input-label">Title</label>
+        <input type="text" class="modal-input"/>
+      </div>
+      <div class="modal-input-wrapper">
+        <label for="" class="modal-input-label">Description</label>
+        <textarea class="modal-input modal-input-area"></textarea>
+      </div>
+      <div class="modal-input-wrapper flex-end">
+        <button class="modal-save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="../js/home.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+</html>

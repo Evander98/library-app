@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "evan",
+      "fullName": "Evander Kristalino",
+      "email": "evan@gmail.com",
+      "password": "evan",
+      "role": "admin",
+      "profile_pic": "https://media-exp3.licdn.com/dms/image/C5603AQEWPYrADvPTug/profile-displayphoto-shrink_800_800/0/1611134852859?e=1628726400&v=beta&t=RG4csg7IuAk7rS1cSWRPMnakaQ4bhc3CxUiP1-NoYTY"
+    },
+    {
+      "id": 2,
+      "username": "budi",
+      "fullName": "budi",
+      "email": "budi",
+      "password": "budi",
+      "role": "user",
+      "profile_pic": "https://randomuser.me/api/portraits/men/24.jpg"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "Dilan 1990",
+      "release_date": "30 Juni 2019",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo incidunt ducimus aperiam nesciunt, perspiciatis voluptatem tenetur tempora rerum provident sed, unde illo omnis at enim. Aliquam cumque commodi voluptatum totam deleniti at ex consequatur? Ipsam labore amet culpa, accusantium quo mollitia exercitationem doloribus dolore facere distinctio consequatur ratione voluptatem reprehenderit pariatur? Soluta nemo eaque exercitationem dolore laborum, nesciunt obcaecati. Repellendus illo itaque quo nam debitis dicta fugit doloremque, laborum ipsa delectus qui odio, neque architecto natus minus aliquid totam similique esse cum, quibusdam consequuntur? Modi repellat ipsam exercitationem vitae fugit iusto cum voluptatem! Quibusdam tempora, cum aperiam eveniet fuga beatae!",
+      "url_image": "",
+      "category": "Novel"
+    }
+  ]
+}

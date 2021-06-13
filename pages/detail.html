@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/style.css">
+  <title>Detail</title>
+</head>
+<body>
+  <div class="detail-container">
+    <div class="detail-cover">
+      <div class="detail-back-btn" onclick="window.location.href='./home.html'">
+        <img src="../assets/images/Arrow.svg" alt="">
+      </div>
+      <div id="manage-book">
+        <p class="detail-edit-delete" onclick="modalEdit()">Edit</p>
+        <p class="detail-edit-delete" onclick="modalDelete()">Delete</p>
+      </div>
+      <img src="../assets/images/covernya.svg" alt="" class="book-cover">
+    </div>
+    <div class="detail-content">
+      <div class="detail-box">
+        <div class="detail-title-wrapper">
+          <div>
+            <p class="category">Novel</p>
+            <p class="title">DILAN 1990</p>
+            <p class="release-date">30 Juni 2019</p>
+          </div>
+          <p class="availability">Available</p>
+        </div>
+        <p class="book-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex itaque beatae aliquid. Eos labore animi ab nostrum inventore fugit a. Veritatis non vel aspernatur corporis ut velit temporibus. Excepturi rerum cupiditate consequuntur fugit beatae incidunt provident laboriosam ea ipsa voluptatum dolorem ad eum laudantium consectetur suscipit, distinctio saepe ullam? Iusto, sit rem. Voluptatem, voluptas dignissimos veritatis incidunt excepturi ipsum amet laborum quidem totam, maxime porro quas sed! Laborum rerum ea deserunt, accusantium nihil, quas quia voluptatum quod sunt officia repudiandae nisi facere porro quasi magnam provident perspiciatis minima adipisci reprehenderit vero earum eligendi natus? Iste sapiente ipsam modi distinctio non.</p>
+      </div>
+      <button class="modal-save-btn">Borrow</button>
+    </div>
+  </div>
+  <div id="edit-modal">
+    <div class="modal-box">
+      <img src="../assets/images/close (1).svg" alt="" class="modal-close" onclick="modalEdit()">
+      <p class="modal-title">Edit Data</p>
+      <div class="modal-input-wrapper">
+        <label for="" class="modal-input-label">URL Image</label>
+        <input type="text" class="modal-input"/>
+      </div>
+      <div class="modal-input-wrapper">
+        <label for="" class="modal-input-label">Title</label>
+        <input type="text" class="modal-input"/>
+      </div>
+      <div class="modal-input-wrapper">
+        <label for="" class="modal-input-label">Description</label>
+        <textarea class="modal-input modal-input-area"></textarea>
+      </div>
+      <div class="modal-input-wrapper flex-end">
+        <button class="modal-save-btn">Save</button>
+      </div>
+    </div>
+  </div>
+  <div id="delete-modal">
+    <div class="delete-modal-box">
+      <!-- <img src="../assets/images/close (1).svg" alt="" class="delete-modal-close" onclick="modalDelete()"> -->
+      <!-- <div class="delete-items-wrapper"> -->
+        <img src="../assets/images/checked.svg" alt="">
+        <label for="" class="delete-modal-text">Data <b>Dilan 1990</b> berhasil dihapus!</label>
+      <!-- </div> -->
+      
+    </div>
+  </div>
+</body>
+<script src="../js/detail.js"></script>
+</html>
