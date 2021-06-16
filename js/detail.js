@@ -8,7 +8,6 @@ const ifAdmin = () => {
   }else{
     document.getElementById('manage-book').style.display = 'none'
   }
-
 }
 
 const modalEdit = () => {

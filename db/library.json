@@ -17,15 +17,61 @@
       "password": "budi",
       "role": "user",
       "profile_pic": "https://randomuser.me/api/portraits/men/24.jpg"
+    },
+    {
+      "id": 3,
+      "username": "andi",
+      "fullName": "andi",
+      "email": "andi",
+      "password": "andi",
+      "profile_pic": "https://www.pikpng.com/pngl/b/80-805068_my-profile-icon-blank-profile-picture-circle-clipart.png",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "username": "udin",
+      "fullName": "awaludin",
+      "email": "udin@gmail.com",
+      "password": "udin",
+      "profile_pic": "https://www.pikpng.com/pngl/b/80-805068_my-profile-icon-blank-profile-picture-circle-clipart.png",
+      "role": "user"
     }
   ],
   "books": [
     {
       "id": 1,
       "title": "Dilan 1990",
+      "author": "Raditya Dika",
       "release_date": "30 Juni 2019",
       "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo incidunt ducimus aperiam nesciunt, perspiciatis voluptatem tenetur tempora rerum provident sed, unde illo omnis at enim. Aliquam cumque commodi voluptatum totam deleniti at ex consequatur? Ipsam labore amet culpa, accusantium quo mollitia exercitationem doloribus dolore facere distinctio consequatur ratione voluptatem reprehenderit pariatur? Soluta nemo eaque exercitationem dolore laborum, nesciunt obcaecati. Repellendus illo itaque quo nam debitis dicta fugit doloremque, laborum ipsa delectus qui odio, neque architecto natus minus aliquid totam similique esse cum, quibusdam consequuntur? Modi repellat ipsam exercitationem vitae fugit iusto cum voluptatem! Quibusdam tempora, cum aperiam eveniet fuga beatae!",
-      "url_image": "",
+      "url_image": "https://ecs7.tokopedia.net/img/cache/700/product-1/2017/2/1/16164266/16164266_a85a6a29-4998-4826-b17d-68cdf2f3bc04_305_448.jpg",
+      "category": "Novel"
+    },
+    {
+      "id": 2,
+      "title": "Sebuah Seni Untuk Bersikap Bodoh Amat",
+      "author": "Raditya Dika",
+      "release_date": "30 Juni 2019",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo incidunt ducimus aperiam nesciunt, perspiciatis voluptatem tenetur tempora rerum provident sed, unde illo omnis at enim. Aliquam cumque commodi voluptatum totam deleniti at ex consequatur? Ipsam labore amet culpa, accusantium quo mollitia exercitationem doloribus dolore facere distinctio consequatur ratione voluptatem reprehenderit pariatur? Soluta nemo eaque exercitationem dolore laborum, nesciunt obcaecati. Repellendus illo itaque quo nam debitis dicta fugit doloremque, laborum ipsa delectus qui odio, neque architecto natus minus aliquid totam similique esse cum, quibusdam consequuntur? Modi repellat ipsam exercitationem vitae fugit iusto cum voluptatem! Quibusdam tempora, cum aperiam eveniet fuga beatae!",
+      "url_image": "https://4.bp.blogspot.com/-6atYLZ7H3Ro/XCWmSETzCBI/AAAAAAAACSs/TSB8SINvk6UuV3VmsqFmuaOmXCcGWLPbACLcBGAs/s1600/buku%2Bnovella.jpg",
+      "category": "Novel"
+    },
+    {
+      "id": 3,
+      "title": "React Native",
+      "author": "Raditya Dika",
+      "release_date": "30 Juni 2019",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo incidunt ducimus aperiam nesciunt, perspiciatis voluptatem tenetur tempora rerum provident sed, unde illo omnis at enim. Aliquam cumque commodi voluptatum totam deleniti at ex consequatur? Ipsam labore amet culpa, accusantium quo mollitia exercitationem doloribus dolore facere distinctio consequatur ratione voluptatem reprehenderit pariatur? Soluta nemo eaque exercitationem dolore laborum, nesciunt obcaecati. Repellendus illo itaque quo nam debitis dicta fugit doloremque, laborum ipsa delectus qui odio, neque architecto natus minus aliquid totam similique esse cum, quibusdam consequuntur? Modi repellat ipsam exercitationem vitae fugit iusto cum voluptatem! Quibusdam tempora, cum aperiam eveniet fuga beatae!",
+      "url_image": "https://m.media-amazon.com/images/P/B0748NN3VL.01._SCLZZZZZZZ_SX500_.jpg",
+      "category": "Novel"
+    },
+    {
+      "id": 4,
+      "title": "React Native",
+      "author": "Raditya Dika",
+      "release_date": "30 Juni 2019",
+      "description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nemo incidunt ducimus aperiam nesciunt, perspiciatis voluptatem tenetur tempora rerum provident sed, unde illo omnis at enim. Aliquam cumque commodi voluptatum totam deleniti at ex consequatur? Ipsam labore amet culpa, accusantium quo mollitia exercitationem doloribus dolore facere distinctio consequatur ratione voluptatem reprehenderit pariatur? Soluta nemo eaque exercitationem dolore laborum, nesciunt obcaecati. Repellendus illo itaque quo nam debitis dicta fugit doloremque, laborum ipsa delectus qui odio, neque architecto natus minus aliquid totam similique esse cum, quibusdam consequuntur? Modi repellat ipsam exercitationem vitae fugit iusto cum voluptatem! Quibusdam tempora, cum aperiam eveniet fuga beatae!",
+      "url_image": "https://m.media-amazon.com/images/P/B0748NN3VL.01._SCLZZZZZZZ_SX500_.jpg",
       "category": "Novel"
     }
   ]

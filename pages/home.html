@@ -18,11 +18,11 @@
 <body>
   <div class="navbar">
     <div class="top-menu-wrapper">
-      <div class="top-menu-wrapper">
+      <div>
         <p class="top-menu">All Categories</p>
         <img src="../assets/images/Polygon.svg" alt="">
       </div>
-      <div class="top-menu-wrapper">
+      <div>
         <p class="top-menu">All Time</p>
         <img src="../assets/images/Polygon.svg" alt="">
       </div>
@@ -36,41 +36,38 @@
       <p class="app-title">Library</p>
     </div>
   </div>
-  <div class="carousel">
-    <div class="carousel-flickity js-flickity">
-      <!-- images from unsplash.com -->
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/orange-tree.jpg" alt="orange tree" />
+  <div class="carousel-container">
+    <div class="js-flickity" id="carousel-wrapper" data-flickity='{ "wrapAround": true }'>
+      <!-- <div class="carousel-cell"> -->
+        <!-- <div class="carousel-card">
+          <img src="../assets/images/book-cover.svg" alt="" class="carousel-image">
+          <div class="carousel-title-wrapper">
+            <p class="carousel-text carousel-title">Dilan 1990</p>
+            <p class="carousel-text">Pidi Baiq</p>
+          </div>
+        </div>
       </div>
       <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/submerged.jpg" alt="submerged" />
+        <div class="carousel-card">
+          <div class="carousel-title-wrapper">
+            <p class="carousel-text carousel-title">Sebuah Seni Untuk Bersikap Bodoh Amat</p>
+            <p class="carousel-text">Raditya Dika</p>
+          </div>
+        </div>
       </div>
       <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/look-out.jpg" alt="look-out" />
-      </div>
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/one-world-trade.jpg" alt="One World Trade" />
-      </div>
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/drizzle.jpg" alt="drizzle" />
-      </div>
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" alt="cat nose" />
-      </div>
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" alt="contrail" />
-      </div>
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" alt="golden hour" />
-      </div>
-      <div class="carousel-cell">
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" alt="flight formation" />
-      </div>
+        <div class="carousel-card">
+          <div class="carousel-title-wrapper">
+            <p class="carousel-text carousel-title">React Native</p>
+            <p class="carousel-text">Emilio Rodriguez Martinez</p>
+          </div>
+        </div>
+      </div> -->
     </div>
   </div>
   <div class="book-list">
     <p class="app-title ">Book list</p>
-    <div class="book-list-wrapper">
+    <div class="book-list-wrapper" id="book-list-wrapper">
       <div class="book-card" onclick="window.location.href='../pages/detail.html'">
         <div class="card-image">
           <img src="../assets/images/card-book-cover.svg" alt="">
@@ -85,7 +82,7 @@
           <img src="../assets/images/bodo-amat.svg" alt="">
         </div>
         <div class="card-content">
-          <p class="card-title">Dilan 1990</p>
+          <p class="card-title">Sebuah Seni Untuk Bersikap Bodoh Amat</p>
           <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex fugit id eum, repellat explicabo.</p>
         </div>
       </div>
@@ -94,7 +91,7 @@
           <img src="../assets/images/react-native.svg" alt="">
         </div>
         <div class="card-content">
-          <p class="card-title">Dilan 1990</p>
+          <p class="card-title">React Native</p>
           <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae ex fugit id eum, repellat explicabo.</p>
         </div>
       </div>

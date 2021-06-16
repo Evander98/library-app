@@ -1,3 +1,5 @@
+var urlAPI = 'http://localhost:3000'
+
 var sidebarToggle = false
 var modalToggle = false
 
@@ -64,7 +66,6 @@ const modalHandler = () => {
   }
 }
 
-
 const onLogout = () => {
   sessionStorage.clear()
   window.location.replace("../index.html")
@@ -85,4 +86,47 @@ const isLoggedIn = () => {
   }
 }
 
+const renderCarousel = () => {
+  fetch(urlAPI + '/books')
+  .then(res => res.json())
+  .then(data => {
+    
+    data.forEach(element => {
+    document.getElementById("carousel-wrapper").innerHTML += `
+        <div class="carousel-cell">
+          <div class="carousel-card">
+            <div class="carousel-title-wrapper">
+              <p class="carousel-text carousel-title">${element.title}</p>
+              <p class="carousel-text">${element.author}</p>
+            </div>
+          </div>
+        </div>
+      `
+    });
+
+
+    data.forEach((element, index) => {
+      document.getElementsByClassName("carousel-card")[index].style.backgroundImage = `url('${element.url_image}')`
+    })
+
+    // data.forEach((element, index) => {
+    //   document.getElementById('book-list-wrapper').innerHTML += `
+    //     <div class="book-card" onclick="window.location.href='../pages/detail.html'">
+    //       <div class="card-image">
+    //         <img src="${element.url_image}" alt="">
+    //       </div>
+    //       <div class="card-content">
+    //         <p class="card-title">${element.title}</p>
+    //         <p class="card-description">${element.description}</p>
+    //       </div>
+    //     </div>
+    //   `
+    // })
+
+  })
+}
+
+
+
 isLoggedIn()
+renderCarousel()
